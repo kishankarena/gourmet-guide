@@ -1,13 +1,17 @@
+"use client";
+
 import Link from "next/link";
 
-// import ImageSlideshow from "@/components/Images/images-slideshow";
+import ImageSlideshow from "@/components/Images/images-slideshow";
 import styles from "./page.module.css";
 
 const Home = () => {
   return (
     <>
       <header className={styles.header}>
-        <div className={styles.slideShow}>{/* <ImageSlideshow /> */}</div>
+        <div className={styles.slideshow}>
+          <ImageSlideshow />
+        </div>
         <div>
           <div className={styles.hero}>
             <h1> Navigate the World of Exquisite Flavors</h1>
